@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <style>
+         *{
+        font-family: 'Lobster', cursive;    /* body တစ်ခုလုံး ကို font သတ်မှတ်ခြင်း */
+    }
+        body{
+            padding: 15px;
+            background-color: rgb(251, 250, 250);
+        }
+        .card{
+           width: 300px;
+           /*border: 1px solid black;*/
+           border-radius: 10px;
+           display: inline-block;
+           overflow: hidden;
+           margin-right: 20px;
+           margin-bottom: 30px;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           background-color: white;
+           vertical-align: top;
+        }
+        .card-body{
+           padding: 15px;
+        }
+        .card-title{
+           margin-top: 0;  
+           font-size: 16px;
+           font-weight: bold;
+        }
+        .card-paragraph{
+            margin-bottom: 0;
+
+        }
+        .card-img{
+           width: 100%;
+           display: block;
+        } 
+        .card-icon{
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: gold;
+            
+        }
+        .text-center{
+            text-align: center;
+        }
+        .add-to-cart{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            color:white;
+            border: none;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-top: -20px;
+            position: relative;
+        }
+        .see-more{
+            width: 50%;
+            height: 40px;
+            background-color: black;
+            color:white;
+            border: none;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            margin-bottom: -20px;
+           
+           
+        }
+        .texture{
+            background-image: url("image/bg-image.jpg");
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">သာလီစွပါ</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+    </div>
+    <div class="card ">
+        <div class="card-body">
+            <p class="card-title">သာလီစွပါ</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">သာလီစွပါ</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./image/clock.jpg" class="card-img" alt="">
+        <div class="card-body">
+            <p class="card-title">clock</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+    </div>
+    <div class="card text-center texture" style="overflow: visible;"  style="background-image: url(./image/bg-image.jpg);">
+        <div class="card-body" >
+            <i class="card-icon fas fa-home" ></i>
+            <p class="card-title">သာလီစွပါ</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+        <button class="see-more">See more</button>
+    </div>
+    <div class="card">
+        <img src="./image/nature.jpg" class="card-img" alt="">
+        <button class="add-to-cart">
+            <i class="fas fa-plus"></i>
+        </button>
+        <div class="card-body">
+            <p class="card-title">Nature</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nulla.
+            </p>
+        </div>
+       
+</body>
+</html>

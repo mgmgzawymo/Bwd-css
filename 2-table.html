@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table css</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+        *{
+            font-family: 'Bebas Neue', sans-serif;
+
+        }
+        table{
+            width: 80%;
+           /* border: 2px solid red;*/
+            border-collapse: collapse;
+            margin: 20px auto;
+            
+        }
+        td,th{
+            padding: 10px 20px;
+            border: 3px solid rgb(235, 133, 133);
+            
+        }
+        tr:hover{
+            background-color: rgb(13, 165, 168);
+        }
+        th{
+            text-align: left;
+            font-weight: bolder;
+            background-color:rgb(29, 197, 121);
+            color: white;
+            font-size: 20px;
+        }
+        td:last-child{     
+            text-align: right;    /*  နောက်ဆုံးစာပိုဒ် ညာဘက်ကို ကန်ခြင်း */
+        }
+        tr:nth-child(odd){
+          background-color: bisque;  /* စုံ/မ/ဂဏန်း နှင့်လည်းရသည်    */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+          <th>salary</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>120</td>
+          
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+          <td>500</td>
+
+        </tr>
+    </tr>
+    <tr>
+      <td>Centro comercial</td>
+      <td>arakan project</td>
+      <td>Arakkan</td>
+      <td>90</td>
+
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: center">Total Salary</td>
+      <td>SUM</td>
+    </tr>
+      </table>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+      *{
+        font-family: sans-serif;
+      }
+        .product:hover{
+          box-shadow: rgba(31, 119, 186, 0.24) 0px 8px 16px;
+          transform: translateY(-4px);
+          transition: 0.5s;
+        }
+        
+      
+        .product{
+            width: 350px;
+            display: inline-block;
+           /* height: 400px;
+            border: 2px solid black;*/
+            overflow: hidden;
+            border-radius: 10px;
+            margin:  10px 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .product-image{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto;    /*  inline ကို block ပြောင်းမှနေရာရွေ့လို့ရသည် */
+            margin-top: 10px;
+           
+        }
+        .product-information{
+           /* border:  2px solid black;*/
+            padding: 10px 20px; 
+        }
+        .product-name{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .product-description{
+            font-weight: light;
+            font-size: 14px;
+            color: rgb(95, 93, 93);
+        } 
+        .text-mute{
+            color:rgb(135, 132, 132);
+        }
+        .fw-bold{
+             font-weight: bold;
+            }
+         .star-color{
+            color: gold;
+         }   
+         .text-center{
+            text-align: center;
+         }
+         .text_right{
+            text-align: right;
+         }
+         .text-left{
+            text-align: left;
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="product">
+        <div class="">
+            <img class="product-image" src="./image/nature.jpg" alt="">
+            </div>
+            <div class="product-information text_right">
+              <p class="product-name">Nature image</p>
+              <div class="ratting">
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-regular fa-star star-color"></i>
+              </div>
+              <p class="product-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto labore pariatur! Magnam quis harum quasi. Cum modi neque molestiae!
+              </p>
+              <p class="fw-bold">
+                $ 200 (<del class="text-mute">$400</del>)
+              </p>
+              </div>
+            </div> <div class="product">
+                <div class="">
+                    <img class="product-image" src="./image/nature.jpg" alt="">
+                    </div>
+                    <div class="product-information text-center">
+                      <p class="product-name">Nature image</p>
+                      <div class="ratting">
+                        <i class="fa-solid fa-star star-color"></i>
+                        <i class="fa-solid fa-star star-color"></i>
+                        <i class="fa-solid fa-star star-color"></i>
+                        <i class="fa-solid fa-star star-color"></i>
+                        <i class="fa-regular fa-star star-color"></i>
+                      </div>
+                      <p class="product-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto labore pariatur! Magnam quis harum quasi. Cum modi neque molestiae!
+                      </p>
+                      <p class="fw-bold">
+                        $ 200 (<del class="text-mute">$400</del>)
+                      </p>
+                      </div>
+                    </div>
+                    <div class="product">
+                        <div class="">
+                            <img class="product-image" src="./image/clock.jpg" alt="">
+                            </div>
+                            <div class="product-information text-left">
+                              <p class="product-name">Nature image</p>
+                              <div class="ratting">
+                                <i class="fa-solid fa-star star-color"></i>
+                                <i class="fa-solid fa-star star-color"></i>
+                                <i class="fa-solid fa-star star-color"></i>
+                                <i class="fa-solid fa-star star-color"></i>
+                                <i class="fa-regular fa-star star-color"></i>
+                              </div>
+                              <p class="product-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto labore pariatur! Magnam quis harum quasi. Cum modi neque molestiae!
+                              </p>
+                              <p class="fw-bold">
+                                $ 200 (<del class="text-mute">$400</del>)
+                              </p>
+                              </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div>
+                                <i class="fa-solid fa-camera fa-1x"></i>
+                                <i class="fa-solid fa-camera fa-2x"></i>
+                                <i class="fa-solid fa-camera fa-3x"></i>
+                                <i class="fa-solid fa-camera fa-4x"></i>
+                                <i class="fa-solid fa-camera fa-5x"></i>
+                                <i class="fa-solid fa-camera fa-6x"></i>
+                                <i class="fa-solid fa-camera fa-7x"></i>
+                                <i class="fa-solid fa-camera fa-8x"></i>
+                                <i class="fa-solid fa-camera fa-9x"></i>
+                                <i class="fa-solid fa-camera fa-10x"></i>
+                              
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+             
+    
+     
+</body>
+</html>
